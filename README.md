@@ -1,7 +1,5 @@
 # GIC-quAI: Quantum AI for Colorectal Cancer Diagnosis
 
-<img src="./imgs/GIC_quAI_logo.jpeg" alt="Project Logo"width="200"/>
-
 ## Introduction
 
 The rapid advancement of classical machine learning (ML) algorithms has significantly enhanced image processing capabilities. However, the energy consumption associated with high-performance computing (HPC) for these tasks is increasingly unsustainable. Classical methods, while effective, face scalability challenges due to the exponential increases in computational demands as data volumes grow.

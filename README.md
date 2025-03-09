@@ -1,5 +1,7 @@
 # GIC-quAI: Quantum AI for Colorectal Cancer Diagnosis
 
+<img src="./imgs/GIC_quAI_logo.jpeg" alt="Project Logo"width="200"/>
+
 ## Introduction
 
 The rapid advancement of classical machine learning (ML) algorithms has significantly enhanced image processing capabilities. However, the energy consumption associated with high-performance computing (HPC) for these tasks is increasingly unsustainable. Classical methods, while effective, face scalability challenges due to the exponential increases in computational demands as data volumes grow.
@@ -68,8 +70,6 @@ The dataset is stored in **NumPy (.npy) format** and labeled with a CSV file (`l
   - Uses **mini-batch gradient descent**.
   - Optimizers: **Adam, AdamW, and SGD**.
   - Loss Function: **Binary Cross-Entropy with Logits (BCEWithLogitsLoss)**.
- 
- 
 
 ### Pulser Graph-Based ML
 
@@ -80,8 +80,6 @@ The dataset is stored in **NumPy (.npy) format** and labeled with a CSV file (`l
   - Uses **Pasqal’s neutral atom processors**.
   - Incorporates **Hamiltonian evolutions** for feature extraction.
   - Optimizes **energy-based classification methods**.
- 
-
 
 ## Results, Evaluation & Roadmap
 
@@ -92,15 +90,16 @@ The dataset is stored in **NumPy (.npy) format** and labeled with a CSV file (`l
 - **Energy Efficiency**: Evaluating potential energy savings vs. classical HPC.
 
 # Quadence-based Implementation Performance:
-  - 4x4 Images:
-  - - Accuracy: 90.6%
-  - 8x8 Images:
-  - - Accuracy: 69.1%
-   
- # Pulser-based Implementation Performance:
-  - 256x256 Images:
-  - - Accuracy: 62.5%
 
+- 4x4 Images:
+- - Accuracy: 90.6%
+- 8x8 Images:
+- - Accuracy: 69.1%
+
+# Pulser-based Implementation Performance:
+
+- 256x256 Images:
+- - Accuracy: 62.5%
 
 ### Future Work
 
@@ -126,29 +125,34 @@ The dataset is stored in **NumPy (.npy) format** and labeled with a CSV file (`l
 ## How to Run
 
 1. **Clone the repository**:
+
    ```sh
    git clone https://github.com/pasqal-io/Pasqal_Hackathon_Feb25_Team_02
    cd Pasqal_Hackathon_Feb25_Team_02
    ```
 2. **Install dependencies**:
+
    ```sh
    pip install -r requirements.txt
    ```
 3. **Run script**:
-   
+
    For the Pulser-based implementation
+
    ```sh
    cd code/Pulser_implementation
    python3 pipeline/main.py
    ```
+
    or for the Qadence-based implementation
-    ```sh
+
+   ```sh
    cd code/Qadence_implementation
    python3 Qadence_QNN.py
    ```
+
 ---
 
 The code developed in this repository use python 3.10
 
 **GIC-quAI** aims to push the boundaries of AI-driven medical imaging by integrating quantum computing into cancer diagnostics. 🚀
-
